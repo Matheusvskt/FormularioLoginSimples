@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+
+	background-image: url("img/desfoq.jpg");
+
+
+}
+
+form {
+	background-color: rgba(135, 145, 190, 0.219);
+	max-width: 500px;
+	width: 70%;
+	padding: 80px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+	border: 1px solid rgba(147, 184, 189, 0.8);
+}
+
+form h3 {
+	font-size: 30px;
+	color: #000000;
+	padding: 2px 0 10px 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+form input[type=text],
+form input[type=password] {
+	width: 100%;
+	height: 45px;
+	border: 1px solid white;
+	padding-left: 10px;
+	margin: 10px 0;
+	border-radius: 6px;
+
+
+}
+
+form input[type=submit] {
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.8211659663865546) 0%, rgba(0, 212, 255, 1) 100%);
+	color: white;
+	border: 0;
+	border-radius: 20px;
+	transition: 1s;
+}
+
+form input[type=submit]:hover {
+	background-color: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(44, 9, 121, 0.8211659663865546) 100%, rgba(0, 212, 255, 1) 100%);
+	;
+}
+
+form input[type=text]:hover {
+	outline: 0;
+}
+
+form input[type=password]:hover {
+	outline: 0;
+}
+
+h3:after {
+	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: 10px;
+	background: -webkit-linear-gradient(left, rgba(12, 16, 255, 0) 0%, rgba(14, 110, 255, 0.8) 20%, rgb(15, 121, 241) 53%, rgba(13, 72, 236, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+	background: linear-gradient(left, rgba(147, 184, 189, 0) 0%, rgba(17, 38, 228, 0.8) 20%, rgb(23, 100, 241) 53%, rgba(17, 92, 255, 0.8) 79%, rgba(147, 184, 189, 0) 100%);
+}
+
+#container {
+	text-align: left;
+	position: relative;
+	top: -7px;
+
+}
+
+form div {
+	text-align: center;
+	width: 100%;
+	padding-top: 20px;
+}
+
+
+.text-center {
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <form>
+        <h3>Login da conta</h3>
+
+        <input type="text" name="email" placeholder="contato@htmlecssjs.com">
+        <input type="password" name="senha" placeholder="Sua senha...">
+        <input type="submit" name="acao" value="Login">
+
+        <div id="container">
+            <input type="checkbox" name="manter-logado" id="manter-logado" value="">
+            <label for="manter-logado">Manter-me logado</label>
+        </div>
+
+        <div class="text-center p-t-90">
+            <a class="txt1" href="#">
+                Esqueceu a senha?
+            </a>
+        </div>
+        <div class="text-center p-t-57 p-b-20">
+            <span class="txt1">
+                Ou login com:
+            </span>
+        </div>
+    </form>
+    <script>
+        var email = document.getElementById('email');
+        var password = document.getElementById('password')
+
+        email.addEventListener('focus', () => {
+            email.style.borderColor = "#4A5F6A";
+        })
+        email.addEventListener('blur', () => {
+            email.style.borderColor = "#CCC";
+        })
+        password.addEventListener('focus', () => {
+            password.style.borderColor = "#CCC";
+        })
+        password.addEventListener('blur', () => {
+            password.style.borderColor = "#CCC";
+        })
+    </script>
+</body>
+
+</html>
